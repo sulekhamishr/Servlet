@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.java.hms.model.Doctor" table="Doctor">
+        <id name="doctorId" type="int">
+            <column name="doctorId"/>
+            <generator class="increment"/>
+        </id>
+
+        <property name="name" type="java.lang.String">
+            <column name="name"/>
+        </property>
+
+        <property name="specialty" type="java.lang.String">
+            <column name="specialty"/>
+        </property>
+
+
+        <property name="phoneNumber" type="long">
+            <column name="phoneNumber"/>
+        </property>
+
+        <property name="email" type="java.lang.String">
+            <column name="email"/>
+        </property>
+
+
+    </class>
+</hibernate-mapping>

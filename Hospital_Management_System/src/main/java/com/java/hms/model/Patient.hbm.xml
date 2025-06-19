@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.java.hms.model.Patient" table="Patient">
+        <id name="patientId" type="int">
+            <column name="patientId"/>
+            <generator class="increment"/>
+        </id>
+
+        <property name="name" type="java.lang.String">
+            <column name="name"/>
+        </property>
+
+        <property name="dateOfBirth" type="java.sql.Date">
+            <column name="dateOfBirth"/>
+        </property>
+
+        <property name="gender" type="java.lang.String">
+            <column name="gender"/>
+        </property>
+
+        <property name="address" type="java.lang.String">
+            <column name="address"/>
+        </property>
+
+        <property name="phoneNumber" type="long">
+            <column name="phoneNumber"/>
+        </property>
+
+        <property name="email" type="java.lang.String">
+            <column name="email"/>
+        </property>
+
+        <property name="bloodGroup" type="java.lang.String">
+            <column name="bloodGroup"/>
+        </property>
+
+        <property name="disease" type="java.lang.String">
+            <column name="disease"/>
+        </property>
+
+        <property name="admissionDate" type="java.sql.Date">
+            <column name="admissionDate"/>
+        </property>
+    </class>
+</hibernate-mapping>
