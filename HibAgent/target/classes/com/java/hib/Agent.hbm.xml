@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.java.hib.Agent" table="AGENT">
+
+        <!-- Primary Key Mapping -->
+        <id name="agentID" type="int">
+            <column name="AgentID"/>
+            <generator class="increment"/>
+        </id>
+
+        <!-- Property: name -->
+        <property name="name" type="java.lang.String">
+            <column name="Name"/>
+        </property>
+
+        <!-- Property: city -->
+        <property name="city" type="java.lang.String">
+            <column name="City"/>
+        </property>
+
+        <!-- Property: gender -->
+        <property name="gender" type="java.lang.String">
+            <column name="Gender"/>
+        </property>
+
+        <!-- Property: maritalStatus -->
+        <property name="maritalStatus" type="java.lang.Integer">
+            <column name="MaritalStatus"/>
+        </property>
+
+        <!-- Property: premium -->
+        <property name="premium" type="java.lang.String">
+            <column name="Premium"/>
+        </property>
+
+    </class>
+</hibernate-mapping>
